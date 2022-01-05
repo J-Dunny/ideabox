@@ -30,13 +30,13 @@
         <form action="index.html" method="post">
 
           <label for="title"> <h3>Title</h3> </label>
-          <input class ="title-input" type="text" name="title" value="">
+          <input class="title-input" maxlength="25" type="text" name="title" value="">
 
 
           <label for="body"> <h3>Body</h3> </label>
 
       <!-- changed input to text area -->
-          <textarea class="body-input" rows="4" style= "" type="text" name="body" value=""> </textarea>
+          <textarea class="body-input" maxlength="100" rows="4" style= "" type="text" name="body" value=""> </textarea>
 
           <button class = "save-button" type="submit" name="button">Save</button>
         </form>
@@ -50,7 +50,7 @@
       <section class = "idea-box-section">
 
           <!-- INDIVIDUAL BOX -->
-        <section class="idea-box">
+        <!-- <section class="idea-box">
           <div class="box-header">
             <img class="box-images hidden" src="./assets/star-active.svg" alt=""/>
             <img class="box-images" src="./assets/star.svg" alt=""/>
@@ -58,16 +58,15 @@
             <img class="box-images hidden" src="./assets/delete-active.svg" alt=""/>
           </div>
           <div class="box-body">
-            <h1>Title</h1>
-            <p>Idea body. Don't ever play yourself. Every chance I get, I water the plants,Lion! Cloth talk.</p>
+            <h1 class= 'idea-title'></h1>
+            <p class= 'idea-body'>Idea body. Don't ever play yourself. Every chance I get, I water the plants,Lion! Cloth talk.</p>
           </div>
           <div class="box-footer">
 
             <img class="box-images" src="./assets/comment.svg" alt=""/>
     <h4 class="comment">Comment</h4>
           </div>
-
-        </section>
+        </section> -->
 
       </section>
     </div>

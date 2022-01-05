@@ -21,7 +21,7 @@ body {
   display: inline-block;
 }
 
-hr{
+hr {
   background-color: #31305F;
 
 }
@@ -127,6 +127,8 @@ input {
   padding: 10px;
   background-color: white;
   height: 175px;
+  display: flex;
+  flex-wrap: wrap;
 }
 .box-footer {
   /* text-align: center; */
@@ -146,8 +148,6 @@ input {
 .comment {
   color: #E9E9F3;
 }
-
-
 
 .hidden {
   display: none!important;
