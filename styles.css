@@ -1,14 +1,14 @@
 
 body{
   display:flex;
-  justify-content: flex-start;
+  /* justify-content: flex-start; */
   color: #53564A;
   font-family: sans-serif;
   font-weight: lighter;
 }
 
 .nav {
-  min-height: 100vh;
+  /* min-height: 100vh; */
   background-color: #1F1F3D;
   font-family: sans-serif;
   font-weight: bold;
@@ -20,8 +20,9 @@ body{
   display: inline-block;
 }
 
-.hr{
-  background-color: red;
+hr{
+  background-color: #31305F;
+
 }
 
 .nav-title{
@@ -58,6 +59,10 @@ input{
 }
 
 .idea-box-section{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 20px;
+  padding: 20px;
   min-height: 60vh;
   background-color: #EAEAF4;
 }
@@ -67,4 +72,71 @@ input{
   color: #BFBFDD;
   background-color: #353567;
   width: 300px;
+}
+
+.search-button{
+  padding: 6px;
+  height: 35px;
+  width: 35px;
+  color: #BFBFDD;
+  background-color: #353567;
+}
+
+.search-bar{
+
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+}
+
+.search-image{
+  width: 10px;
+}
+
+
+/* ideabox */
+
+
+.idea-box{
+  display: flex;
+  flex-direction:column;
+  height: 225px;
+  width: 200px;
+  border: solid blue 1px;
+}
+.box-header{
+  display: flex;
+  justify-content: space-between;
+  background-color: #1f1f3d;
+  height: 30px;
+  border: solid blue 1px;
+}
+.box-body{
+  padding: 10px;
+  background-color: white;
+  height: 175px;
+}
+.box-footer{
+  /* text-align: center; */
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  background-color: #5356a4;
+  height: 30px;
+  border: solid blue 1px;
+}
+
+.box-images{
+
+  width: 25px;
+}
+
+.comment{
+  color: #E9E9F3;
+}
+
+
+
+.hidden {
+  display: none!important;
 }

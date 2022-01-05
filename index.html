@@ -22,43 +22,54 @@
     </nav>
 
      <!-- --------- RIGHT SIDE SECTION --------------- -->
-<section class = "input-and-boxes">
+    <div class = "input-and-boxes">
 
      <!-- --------- INPUT SECTION --------------- -->
 
-    <section class = "input-section">
-      <form action="index.html" method="post">
+      <section class = "input-section">
+        <form action="index.html" method="post">
 
-        <label for="title"> <h3>Title</h3> </label>
-        <input type="text" name="title" value="">
-
-
-        <label for="body"> <h3>Body</h3> </label>
-        <input type="text" name="body" value="">
-
-        <button class = "save-button" type="submit" name="button">Save</button>
-      </form>
-      <input type="text" name="" value="" placeholder="Search ideas">
-
-    </section>
-
-     <!-- --------- IDEA BOX SECTION --------------- -->
-    <section class = "idea-box-section">
-
-      <!-- INDIVIDUAL BOX -->
-      <section class="idea-box">
-        <p>THIS WILL BE A BOX</p>
-      </<section>
+          <label for="title"> <h3>Title</h3> </label>
+          <input type="text" name="title" value="">
 
 
-    </section>
+          <label for="body"> <h3>Body</h3> </label>
 
-    </section>
+          <input type="text" name="body" value="">
 
+          <button class = "save-button" type="submit" name="button">Save</button>
+        </form>
+        <div class="search-bar">
+          <button class="search-button"><img class="search-image" src="./assets/search.svg" alt=""/></button>
+          <input type="text" name="" value="" placeholder="Search ideas">
+        </div>
+      </section>
 
+         <!-- --------- IDEA BOX SECTION --------------- -->
+      <section class = "idea-box-section">
 
+          <!-- INDIVIDUAL BOX -->
+        <section class="idea-box">
+          <div class="box-header">
+            <img class="box-images hidden" src="./assets/star-active.svg" alt=""/>
+            <img class="box-images" src="./assets/star.svg" alt=""/>
+            <img class="box-images" src="./assets/delete.svg" alt=""/>
+            <img class="box-images hidden" src="./assets/delete-active.svg" alt=""/>
+          </div>
+          <div class="box-body">
+            <h1>Title</h1>
+            <p>Idea gibberish. Don't ever play ourself. Every chance I get, I water the plants,Lion! Cloth talk.</p>
+          </div>
+          <div class="box-footer">
 
+            <img class="box-images" src="./assets/comment.svg" alt=""/>
+    <h4 class="comment">Comment</h4>
+          </div>
 
+        </section>
+
+      </section>
+    </div>
 
 
     <script type="text/javascript" src="main.js"></script>
