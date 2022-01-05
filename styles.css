@@ -1,5 +1,5 @@
 
-body{
+body {
   display:flex;
   /* justify-content: flex-start; */
   color: #53564A;
@@ -13,9 +13,10 @@ body{
   font-family: sans-serif;
   font-weight: bold;
   display: inline-block;
+  text-align: left;
 }
 
-.input-and-boxes{
+.input-and-boxes {
   width: 600px;
   display: inline-block;
 }
@@ -25,17 +26,18 @@ hr{
 
 }
 
-.nav-title{
+.nav-title {
   margin-left: 15px;
   color: #E9E9F3;
+  padding:
 }
 
-.filter-ideas{
+.filter-ideas {
   margin-left: 15px;
   color: #BFBFDD;
 }
 
-.show-starred{
+.show-starred {
   display:flex;
   justify-content: center;
   align-items: center;
@@ -45,12 +47,14 @@ hr{
   width: 235px;
   background-color: #5356A4;
   color: #E9E9F3;
+  font-size: 20px;
 }
 
-input{
+input {
   width: 300px;
+  padding: 10px;
 }
-.input-section{
+.input-section {
   min-height: 40vh;
   display: flex;
   flex-direction: column;
@@ -58,7 +62,7 @@ input{
   background-color: #A9AAD2;
 }
 
-.idea-box-section{
+.idea-box-section {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-gap: 20px;
@@ -67,14 +71,16 @@ input{
   background-color: #EAEAF4;
 }
 
-.save-button{
+.save-button {
   display: block;
   color: #BFBFDD;
   background-color: #353567;
-  width: 300px;
+  width: 325px;
+  padding: 8px;
+  margin-top: 15px;
 }
 
-.search-button{
+.search-button {
   padding: 6px;
   height: 35px;
   width: 35px;
@@ -82,41 +88,47 @@ input{
   background-color: #353567;
 }
 
-.search-bar{
-
+.search-bar {
   align-items: center;
   display: flex;
   flex-direction: row;
+  padding: 20px;
+  width: 325px;
+
+}
+.body-input {
+  max-height: 70%;
+  padding: 10px;
+  width: 300px;
 }
 
-.search-image{
+.search-image {
   width: 10px;
 }
 
 
 /* ideabox */
 
-
-.idea-box{
+.idea-box {
   display: flex;
   flex-direction:column;
   height: 225px;
   width: 200px;
   border: solid blue 1px;
 }
-.box-header{
+.box-header {
   display: flex;
   justify-content: space-between;
   background-color: #1f1f3d;
   height: 30px;
   border: solid blue 1px;
 }
-.box-body{
+.box-body {
   padding: 10px;
   background-color: white;
   height: 175px;
 }
-.box-footer{
+.box-footer {
   /* text-align: center; */
   align-items: center;
   display: flex;
@@ -126,12 +138,12 @@ input{
   border: solid blue 1px;
 }
 
-.box-images{
+.box-images {
 
   width: 25px;
 }
 
-.comment{
+.comment {
   color: #E9E9F3;
 }
 
