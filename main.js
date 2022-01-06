@@ -7,7 +7,6 @@ var newSave = document.querySelector(".save-button");
 var ideaTitle = document.querySelector(".idea-title");
 var ideaBody = document.querySelector(".idea-body");
 var ideaBoxSection = document.querySelector(".idea-box-section");
-// var errorMessages = document.querySelectorAll("p[class='error-message']");
 var titleError = document.querySelector(".error-title");
 var bodyError = document.querySelector(".error-body");
 
@@ -60,6 +59,9 @@ function newIdea() {
 
     titleError.classList.add("hidden");
     bodyError.classList.add("hidden");
+
+    newTitle.value = "";
+    newBody.value = "";
   }
   console.log(savedIdeas)
 };
