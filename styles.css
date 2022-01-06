@@ -55,6 +55,7 @@ input {
   padding: 10px;
 }
 .input-section {
+  width: 688px;
   min-height: 40vh;
   display: flex;
   flex-direction: column;
@@ -63,6 +64,7 @@ input {
 }
 
 .idea-box-section {
+  width: 648px;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-gap: 20px;
@@ -97,7 +99,7 @@ input {
 
 }
 .body-input {
-  max-height: 70%;
+  height: 50px;
   padding: 10px;
   width: 300px;
 }
@@ -127,8 +129,8 @@ input {
   padding: 10px;
   background-color: white;
   height: 175px;
-  display: flex;
-  flex-wrap: wrap;
+  /* display: flex; */
+  /* flex-wrap: wrap; */
 }
 .box-footer {
   /* text-align: center; */
@@ -147,6 +149,14 @@ input {
 
 .comment {
   color: #E9E9F3;
+}
+
+.error-title{
+  color:red;
+}
+
+.error-body{
+  color:red;
 }
 
 .hidden {
