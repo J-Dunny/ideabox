@@ -1,14 +1,12 @@
 
 body {
   display:flex;
-  /* justify-content: flex-start; */
   color: #53564A;
   font-family: sans-serif;
   font-weight: lighter;
 }
 
 .nav {
-  /* min-height: 100vh; */
   background-color: #1F1F3D;
   font-family: sans-serif;
   font-weight: bold;
@@ -23,7 +21,6 @@ body {
 
 hr {
   background-color: #31305F;
-
 }
 
 .nav-title {
@@ -54,6 +51,7 @@ input {
   width: 300px;
   padding: 10px;
 }
+
 .input-section {
   width: 688px;
   min-height: 40vh;
@@ -66,7 +64,7 @@ input {
 .idea-box-section {
   width: 648px;
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(3, 5fr);
   grid-gap: 20px;
   padding: 20px;
   min-height: 60vh;
@@ -80,10 +78,9 @@ input {
   width: 325px;
   padding: 8px;
   margin-top: 15px;
-
 }
 
-.not-allowed{
+.not-allowed {
   cursor: not-allowed;
   background-color: #4C4D50;
 }
@@ -102,8 +99,8 @@ input {
   flex-direction: row;
   padding: 20px;
   width: 325px;
-
 }
+
 .body-input {
   min-height: 50px;
   padding: 10px;
@@ -121,6 +118,7 @@ input {
   width: 200px;
   border: solid blue 1px;
 }
+
 .box-header {
   display: flex;
   justify-content: space-between;
@@ -128,12 +126,13 @@ input {
   height: 30px;
   border: solid blue 1px;
 }
+
 .box-body {
   padding: 10px;
   background-color: white;
   height: 175px;
-
 }
+
 .box-footer {
   align-items: center;
   display: flex;
@@ -147,15 +146,19 @@ input {
   width: 25px;
 }
 
+.delete-button {
+  width: 25px;
+}
+
 .comment {
   color: #E9E9F3;
 }
 
-.error-title{
+.error-title {
   color:red;
 }
 
-.error-body{
+.error-body {
   color:red;
 }
 
