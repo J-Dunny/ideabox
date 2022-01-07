@@ -63,10 +63,14 @@ input {
   background-color: #A9AAD2;
 }
 
+
+/* .idea-box-section {
+  display:flex
+} */
 .idea-box-section {
   width: 648px;
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(3, 5fr);
   grid-gap: 20px;
   padding: 20px;
   min-height: 60vh;
@@ -144,6 +148,10 @@ input {
 }
 
 .box-images {
+  width: 25px;
+}
+
+.delete-button {
   width: 25px;
 }
 
