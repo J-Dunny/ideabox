@@ -9,27 +9,14 @@ var ideaBody = document.querySelector(".idea-body");
 var ideaBoxSection = document.querySelector(".idea-box-section");
 var titleError = document.querySelector(".error-title");
 var bodyError = document.querySelector(".error-body");
-
 var deleteButton = document.querySelector(".delete-button")
 
 
 newSave.addEventListener('click', newIdea);
 newSave.addEventListener('hover', error);
-
 newTitle.addEventListener('input', error);
 newBody.addEventListener('input', error);
-
-
 ideaBoxSection.addEventListener('click', deleteIdea)
-
-
-// ideaBox.addEventListener('click', function(event) {
-//   if (event.target.className === '.delete-button') {
-//     deleteIdea();
-//   }
-//   console.log('rsdthsfgh')
-// });
-
 
 function deleteIdea(e) {
   var ideaBox = document.querySelector(".idea-box")
@@ -40,11 +27,10 @@ function deleteIdea(e) {
     displayIdeas()
     console.log(savedIdeas)
   }
-
 }
 
-function error(){
-  if (newBody.value && newTitle.value){
+function error() {
+  if (newBody.value && newTitle.value) {
     newSave.classList.remove("not-allowed")
   }
 }
@@ -75,7 +61,6 @@ for (var i = 0; i < savedIdeas.length; i++) {
 
 function newIdea() {
   event.preventDefault();
-
   if (!newTitle.value) {
     titleError.classList.remove("hidden")
   }
