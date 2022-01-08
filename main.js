@@ -20,30 +20,21 @@ newBody.addEventListener('input', error);
 ideaBoxSection.addEventListener('click', deleteIdea);
 ideaBoxSection.addEventListener('click', star);
 
-// ideaBoxSection.addEventListener('click', function(e) {
-//  if (e.target.className === "delete-button") {
-//   deleteIdea()
-//   }
-// // if (e.target.className === "star-white") {
-// //    console.log('working')
-// });
 function star(e) {
-  var starId;
+  var ideaBox = document.querySelector(".idea-box")
   var starWhite = document.querySelector(".star-white")
   var starOrange = document.querySelector(".star-orange")
+
       if (e.target.className === "star-white" || "star-orange") {
         for (var i in savedIdeas) {
           if (savedIdeas[i].id.toString() === e.target.id) {
-            savedIdeas[i].star = true;
-            // starId = e.target.id;
-            // starWhite.classList.toggle("hidden")
-            // starOrange.classList.toggle("hidden")
-            console.log(starId)
+            savedIdeas[i].star = !savedIdeas[i].star;
             displayIdeas()
       }
     }
   }
 }
+
 function deleteIdea(e) {
   if (e.target.className === "delete-button") {
   for (var i in savedIdeas) {
@@ -51,7 +42,6 @@ function deleteIdea(e) {
       savedIdeas.splice(i, 1)
     }
     displayIdeas()
-    console.log(savedIdeas)
     }
   }
 }
@@ -61,47 +51,47 @@ function error() {
     newSave.classList.remove("not-allowed")
   }
 }
-// <img class="star-orange hidden" id="${savedIdeas[i].id}" src="./assets/star-active.svg" alt=""/>
- // <img class="box-images hidden" src="./assets/delete-active.svg" alt=""/>
+
 function displayIdeas() {
   var emptyHTML = "";
 for (var i = 0; i < savedIdeas.length; i++) {
- emptyHTML +=
-  `<section class="idea-box">
-    <div class="box-header">
-     <img class="star-white" id="${savedIdeas[i].id}" src="./assets/star.svg" alt=""/>
-     <img class="delete-button" id="${savedIdeas[i].id}" src="./assets/delete.svg" alt=""/>
-    </div>
-    <div class="box-body">
-      <h1 class= 'idea-title'>${savedIdeas[i].title}</h1>
-      <p class= 'idea-body'>${savedIdeas[i].body}</p>
-    </div>
-    <div class="box-footer">
-      <img class="box-images" src="./assets/comment.svg" alt=""/>
-  <h4 class="comment">Comment</h4>
-    </div>
-  </section>`
-  var boxHeader = document.querySelector(".box-header");
-    if (savedIdeas[i].star) {
-      emptyHTML =
-          `<img class="delete-button" id="${newIdea.id}" src="./assets/delete.svg" alt=""/>
-          <section class="idea-box">
-            <div class="box-header">
-             <img class="star-orange" src="./assets/star-active.svg" alt=""/>
-             <img class="delete-button" id="${savedIdeas[i].id}" src="./assets/delete.svg" alt=""/>
-            </div>
-            <div class="box-body">
-              <h1 class= 'idea-title'>${savedIdeas[i].title}</h1>
-              <p class= 'idea-body'>${savedIdeas[i].body}</p>
-            </div>
-            <div class="box-footer">
-              <img class="box-images" src="./assets/comment.svg" alt=""/>
-          <h4 class="comment">Comment</h4>
-            </div>
-          </section>`
+  if (savedIdeas[i].star) {
+    emptyHTML +=
+        `<section class="idea-box">
+          <div class="box-header">
+           <img class="star-orange" id="${savedIdeas[i].id}" src="./assets/star-active.svg" alt=""/>
+           <img class="delete-button" id="${savedIdeas[i].id}" src="./assets/delete.svg" alt=""/>
+          </div>
+          <div class="box-body">
+            <h1 class= 'idea-title'>${savedIdeas[i].title}</h1>
+            <p class= 'idea-body'>${savedIdeas[i].body}</p>
+          </div>
+          <div class="box-footer">
+            <img class="box-images" src="./assets/comment.svg" alt=""/>
+        <h4 class="comment">Comment</h4>
+          </div>
+        </section>`
+
+  } else {
+      emptyHTML +=
+    `<section class="idea-box">
+      <div class="box-header">
+       <img class="star-white" id="${savedIdeas[i].id}" src="./assets/star.svg" alt=""/>
+       <img class="delete-button" id="${savedIdeas[i].id}" src="./assets/delete.svg" alt=""/>
+      </div>
+      <div class="box-body">
+        <h1 class= 'idea-title'>${savedIdeas[i].title}</h1>
+        <p class= 'idea-body'>${savedIdeas[i].body}</p>
+      </div>
+      <div class="box-footer">
+        <img class="box-images" src="./assets/comment.svg" alt=""/>
+    <h4 class="comment">Comment</h4>
+      </div>
+    </section>`
     }
    }
-  ideaBoxSection.innerHTML = emptyHTML;
+    ideaBoxSection.insertAdjacentHTML("afterbegin", emptyHTML);
+    ideaBoxSection.innerHTML = emptyHTML;
 }
 
 function newIdea() {
