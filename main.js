@@ -144,7 +144,11 @@ function newIdea() {
   if (newBody.value && newTitle.value) {
     var newIdea = new Idea(newTitle.value, newBody.value);
     savedIdeas.push(newIdea);
-    displayIdeas()
+    if (counter){
+      displayStars()
+    } else {
+      displayIdeas()
+    }
     titleError.classList.add("hidden");
     bodyError.classList.add("hidden");
     newTitle.value = "";
