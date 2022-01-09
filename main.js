@@ -17,7 +17,9 @@ var boxHeader = document.querySelector(".box-header");
 var filterIdeas = document.querySelector(".filter-ideas");
 var showStarred = document.querySelector(".show-starred");
 var nav = document.querySelector(".nav");
+var searchInput = document.querySelector(".search-input");
 
+searchInput.addEventListener('input', search);
 newSave.addEventListener('click', newIdea);
 newSave.addEventListener('hover', error);
 newTitle.addEventListener('input', error);
@@ -26,18 +28,71 @@ newBody.addEventListener('input', error);
 ideaBoxSection.addEventListener('click', deleteIdea);
 ideaBoxSection.addEventListener('click', star);
 
-nav.addEventListener('click', function(e){
+nav.addEventListener('click', function(e) {
   if (e.target.className === "show-starred"){
     counter += 1;
     displayStars(e)
   }
-  if (e.target.className === "show-all"){
+  if (e.target.className === "show-all") {
     counter = 0;
     showStarred.innerHTML =
     `<h1 class = "show-starred">Show Starred Ideas</h1>`
     displayIdeas()
   }
 });
+function search() {
+  var emptyHTML = "";
+  var starColor;
+  if (counter) {
+    for (var i in savedIdeas) {
+      if((savedIdeas[i].star) && (savedIdeas[i].title.includes(searchInput.value) || savedIdeas[i].body.includes(searchInput.value))){
+          emptyHTML +=
+          `<section class="idea-box">
+            <div class="box-header">
+             <img class="star-orange" id="${savedIdeas[i].id}" src="./assets/star-active.svg" alt=""/>
+             <img class="delete-button" id="${savedIdeas[i].id}" src="./assets/delete.svg" alt=""/>
+            </div>
+            <div class="box-body">
+              <h1 class= 'idea-title'>${savedIdeas[i].title}</h1>
+              <p class= 'idea-body'>${savedIdeas[i].body}</p>
+            </div>
+            <div class="box-footer">
+              <img class="box-images" src="./assets/comment.svg" alt=""/>
+          <h4 class="comment">Comment</h4>
+            </div>
+          </section>`
+        }
+        ideaBoxSection.insertAdjacentHTML("afterbegin", emptyHTML);
+        ideaBoxSection.innerHTML = emptyHTML;
+      }
+  } else {
+    for (var i in savedIdeas) {
+      if(savedIdeas[i].title.includes(searchInput.value) || savedIdeas[i].body.includes(searchInput.value)){
+        if (savedIdeas[i].star) {
+          starColor = `<img class="star-orange" id="${savedIdeas[i].id}" src="./assets/star-active.svg" alt=""/>`
+        } else { starColor = `<img class="star-white" id="${savedIdeas[i].id}" src="./assets/star.svg" alt=""/>`
+        }
+          emptyHTML +=
+          `<section class="idea-box">
+            <div class="box-header">
+             ${starColor}
+             <img class="delete-button" id="${savedIdeas[i].id}" src="./assets/delete.svg" alt=""/>
+            </div>
+            <div class="box-body">
+              <h1 class= 'idea-title'>${savedIdeas[i].title}</h1>
+              <p class= 'idea-body'>${savedIdeas[i].body}</p>
+            </div>
+            <div class="box-footer">
+              <img class="box-images" src="./assets/comment.svg" alt=""/>
+          <h4 class="comment">Comment</h4>
+            </div>
+          </section>`
+          }
+          ideaBoxSection.insertAdjacentHTML("afterbegin", emptyHTML);
+          ideaBoxSection.innerHTML = emptyHTML;
+      }
+    }
+  }
 
 function star(e) {
   var ideaBox = document.querySelector(".idea-box")
@@ -47,7 +102,7 @@ function star(e) {
         for (var i in savedIdeas) {
           if (savedIdeas[i].id.toString() === e.target.id) {
             savedIdeas[i].star = !savedIdeas[i].star;
-            if (counter){
+            if (counter) {
               displayStars(e)
             } else {
             displayIdeas()
