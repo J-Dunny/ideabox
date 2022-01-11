@@ -11,18 +11,29 @@ A Jake, Kyle, and Rio group project
 
 ## How to navigate the project:
 
-1. Enter your own unique values for the title and body of your idea box and then click the save button! There must be values in both title and body to generate a new idea box. ![Screen Shot 2022-01-08 at 2 08 33 PM](https://user-images.githubusercontent.com/92282738/148660045-6dd6ac09-4cf8-492e-80af-aabf0fbdbdb4.png)
+1. Enter your own unique values for the title and body of your idea box and then click the save button! There must be values in both title and body to generate a new idea box.
+
+ ![Screen Shot 2022-01-08 at 2 08 33 PM](https://user-images.githubusercontent.com/92282738/148660045-6dd6ac09-4cf8-492e-80af-aabf0fbdbdb4.png)
 ---
-2. If you would like to star/favorite the idea box you have made, click the white star in the upper left corner of the idea box. ![Screen Shot 2022-01-08 at 2 02 43 PM](https://user-images.githubusercontent.com/92282738/148660022-9904edb0-ef44-43be-a7c6-898f55e13a7a.png) The star should change to orange and your new idea box is now added to the Starred ideas section. You can also do the opposite and click the orange star to un-save your idea box. ![Screen Shot 2022-01-08 at 2 11 00 PM](https://user-images.githubusercontent.com/92282738/148660115-13c35567-16b9-4d27-bdbb-7d2a9970f8ce.png)
+2. If you would like to star/favorite the idea box you have made, click the white star in the upper left corner of the idea box. The star should change to orange and your new idea box is now added to the Starred ideas section. You can also do the opposite and click the orange star to un-save your idea box.
+
+![Screen Shot 2022-01-08 at 2 11 00 PM](https://user-images.githubusercontent.com/92282738/148660115-13c35567-16b9-4d27-bdbb-7d2a9970f8ce.png)
 ---
-3. In order to delete an idea box you have saved, click the white X in the upper right corner of the idea box and it will delete!  ![Screen Shot 2022-01-08 at 2 09 15 PM](https://user-images.githubusercontent.com/92282738/148660058-ddbd6c11-9387-4211-88a4-b8e62c14e0fb.png)
+3. In order to delete an idea box you have saved, click the white X in the upper right corner of the idea box and it will delete!
+
+![Screen Shot 2022-01-08 at 2 09 15 PM](https://user-images.githubusercontent.com/92282738/148660058-ddbd6c11-9387-4211-88a4-b8e62c14e0fb.png)
 ---
-4. If you wish to view all of your starred idea boxes then click the 'Show Starred Ideas' button on the far left side of the screen. This should toggle between your saved idea boxes and starred idea boxes. ![Screen Shot 2022-01-08 at 2 10 13 PM](https://user-images.githubusercontent.com/92282738/148660342-2c3a02a0-18e9-4a0f-aa26-1c65a5d70f1e.png)
+4. If you wish to view all of your starred idea boxes then click the 'Show Starred Ideas' button on the far left side of the screen. This should toggle between your saved idea boxes and starred idea boxes.
+
+ ![Screen Shot 2022-01-08 at 2 10 13 PM](https://user-images.githubusercontent.com/92282738/148660342-2c3a02a0-18e9-4a0f-aa26-1c65a5d70f1e.png)
 
 ---
 
 
-[Our IdeaBox repository](https://github.com/friotious/ideabox)
+[Our IdeaBox repository link](https://github.com/friotious/ideabox)
+
+[Deployable link](https://friotious.github.io/ideabox/)
+
 ---
 [Jakes Github](https://github.com/J-Dunny)
 
