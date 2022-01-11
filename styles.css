@@ -1,9 +1,17 @@
-
 body {
-  display:flex;
+  display: flex;
   color: #53564A;
   font-family: sans-serif;
   font-weight: lighter;
+}
+
+input {
+  width: 300px;
+  padding: 10px;
+}
+
+hr {
+  background-color: #31305F;
 }
 
 .nav {
@@ -18,14 +26,9 @@ body {
   display: inline-block;
 }
 
-hr {
-  background-color: #31305F;
-}
-
 .nav-title {
   margin-left: 15px;
   color: #E9E9F3;
-  padding:
 }
 
 .filter-ideas {
@@ -35,7 +38,7 @@ hr {
 
 .show-starred,
 .show-all {
-  display:flex;
+  display: flex;
   justify-content: center;
   align-items: center;
   margin-left: 15px;
@@ -46,11 +49,6 @@ hr {
   color: #E9E9F3;
   font-size: 20px;
   cursor: pointer;
-}
-
-input {
-  width: 300px;
-  padding: 10px;
 }
 
 .input-section {
@@ -91,7 +89,6 @@ input {
 .not-allowed {
   cursor: not-allowed;
   background-color: #4C4D50;
-
 }
 
 .search-button {
@@ -100,7 +97,6 @@ input {
   width: 35px;
   color: #BFBFDD;
   background-color: #353567;
-
 }
 
 .search-bar {
@@ -117,7 +113,7 @@ input {
 
 .idea-box {
   display: flex;
-  flex-direction:column;
+  flex-direction: column;
   height: 230px;
   width: 200px;
   border: solid blue 1px;
@@ -160,10 +156,9 @@ input {
 
 .error-title,
 .error-body {
-  color:red;
+  color: red;
 }
 
-
 .hidden {
-  display: none!important;
+  display: none !important;
 }
