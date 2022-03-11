@@ -2,7 +2,7 @@
 
 A Jake, Kyle, and Rio group project
 
-Visit this [link](https://friotious.github.io/ideabox/) to see it in action: 
+Visit this [link](https://friotious.github.io/ideabox/) to see it in action!
 
 ## How to access the project:
 
