@@ -2,6 +2,8 @@
 
 A Jake, Kyle, and Rio group project
 
+Visit this [link](https://friotious.github.io/ideabox/) to see it in action: 
+
 ## How to access the project:
 
 * First clone this repo from Github by going to the code button on the top right of the the friotious/ideabox repo. The link is at the bottom of the page. ![Screen Shot 2022-01-08 at 2 17 08 PM](https://user-images.githubusercontent.com/92282738/148660264-095432ad-f339-4746-ad18-79836cbbf484.png)
@@ -32,7 +34,6 @@ A Jake, Kyle, and Rio group project
 
 [Our IdeaBox repository link](https://github.com/friotious/ideabox)
 
-[Deployable link](https://friotious.github.io/ideabox/)
 
 ---
 [Jakes Github](https://github.com/J-Dunny)
